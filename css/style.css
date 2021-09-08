@@ -12,3 +12,54 @@ header h1{
     font-size: 2rem;
     margin: 3rem auto;
 }
+.tab-navigation{
+    position: relative;
+    width: 80%;
+    margin: 2rem auto;
+    color: #fff;
+}
+.nav-tab{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 1rem;
+    border-radius: 7px;
+    background-color: rgb(86, 86, 86);
+}
+.nav-tab li a{
+    padding: 10px 15px;
+}
+.nav-tab li a:hover,.nav-tab li a:active{
+    border-bottom: solid 1px rgb(255, 62, 62);
+}
+.body-navigation{
+    color: #fff;
+    margin: 7px auto;
+    padding: 15px;
+    position: relative;
+}
+.nav-body li.list-nav{
+    border-radius: 7px;
+    background-color: #2b2b2b;
+    padding: 75px;
+    display: none;
+}
+.nav-body li.selected{
+    display: block !important;
+}
+@media screen and (max-width: 414px) {
+    .nav-tab{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .body-navigation{
+        margin: 2px auto;
+    }
+    .nav-tab li a{
+        padding: 6px 12px;
+    }
+    .nav-body li.list-nav{
+        padding: 15px;
+        font-size: 13px;
+    }
+}

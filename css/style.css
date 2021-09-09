@@ -29,7 +29,7 @@ header h1{
 .nav-tab li a{
     padding: 10px 15px;
 }
-.nav-tab li a:hover,.nav-tab li a:active{
+.nav-tab li a:hover,.nav-tab li a:active,.nav-tab li a.selected{
     border-bottom: solid 1px rgb(255, 62, 62);
 }
 .body-navigation{
@@ -44,7 +44,7 @@ header h1{
     padding: 75px;
     display: none;
 }
-.nav-body li.selected{
+.nav-body li.select{
     display: block !important;
 }
 @media screen and (max-width: 414px) {
